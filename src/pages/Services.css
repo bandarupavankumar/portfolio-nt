@@ -1,0 +1,56 @@
+.services {
+    padding: 2rem 1rem;
+    background-color: #f0f4f8;
+    text-align: center;
+}
+
+.services h2 {
+    color: #00338d;
+    font-family: 'Philosopher', sans-serif;
+    margin-bottom: 2rem;
+}
+
+
+
+.service-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+
+
+}
+
+.service-card {
+    background: white;
+    border-left: 5px solid #007bff;
+    padding: 1.2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.service-card h3 {
+    color: #007bff;
+}
+
+.service-card ul {
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .service-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .service-card {
+        width: 45%;
+        margin: 1rem;
+    }
+}

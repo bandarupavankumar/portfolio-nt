@@ -1,0 +1,50 @@
+/* Header Container */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #002b5c; /* Royal Blue */
+  color: white;
+  font-family: 'Philosopher', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo Styling */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Navigation Links */
+.nav a {
+  color: white;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: #ffd700; /* Optional: Gold on hover for better UX */
+}
+
+/* Optional: Responsive Navigation */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav {
+    margin-top: 0.5rem;
+  }
+
+  .nav a {
+    display: block;
+    margin: 0.5rem 0 0 0;
+  }
+}
